@@ -2,14 +2,19 @@ require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
-  #def initialize(attr_arr)
+  def initialize(attr_arr)
+    @id = attr_arr[0]
+    @name = attr_arr[1]
+    @grade = attr
 
 
 
   def self.new_from_db(row)
-    student = Student.new
-    id = row[0]
-    @id = row[0]
+    pat = Student.new
+    pat.id = row[0]
+    pat.name = row[1]
+    pat.grade = row[2]
+    pat
 
     # create a new Student object given a row from the database
   end
