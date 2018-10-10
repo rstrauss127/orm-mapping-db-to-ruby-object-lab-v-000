@@ -2,10 +2,7 @@ require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
-  def initialize(attr_arr)
-    @id = attr_arr[0]
-    @name = attr_arr[1]
-    @grade = attr
+
 
 
 
