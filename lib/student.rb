@@ -6,8 +6,8 @@ class Student
 
   def self.new_from_db(row)
     new_student = Student.new
-        binding.pry
-    new_student.id= row[1]
+
+    new_student.id= row[0]
     new_student.name = row[1]
     new_student.grade = row[2]
 
