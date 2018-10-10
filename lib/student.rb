@@ -8,7 +8,7 @@ class Student
 
   def self.new_from_db(row)
     student = Student.new
-    student.id = row[0]
+    student.id = row[0].to_i
 
     # create a new Student object given a row from the database
   end
